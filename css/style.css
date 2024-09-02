@@ -1,0 +1,496 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.appDia {
+    background: linear-gradient(#00A3FF, #9dd8f9);
+    width: 100wh;
+    padding: 15px 150px;
+    height: 100vh;
+}
+
+.appNoite {
+    background: linear-gradient(#1b2566, #4e56b3);
+    width: 100wh;
+    padding: 15px 150px;
+    height: 100vh;
+}
+
+.containerBusca {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 40%;
+    max-width: 375px;
+    height: 40px;
+    padding: 3px 20px;
+    background-color: black;
+    border-radius: 20px;
+    background: rgba(0, 0, 0, 0.35);
+}
+
+.containerBusca input {
+    background-color: transparent;
+    border: none;
+    outline: 0;
+    width: 90%;
+    height: 32px;
+    color: white;
+    font-size: 18px;
+}
+
+.icon {
+    width: 65%;
+}
+
+.iconeBusca{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.informacoes {
+    display: flex;
+    font-size: 28px;    
+    font-weight: 300;
+    text-align: end;
+    color: white;
+    text-transform: capitalize;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.containerInfo {
+    display: flex;
+    margin-top: 60px;
+}
+
+.temperaturaGrafico {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+.nomeCidade{
+    font-size: 32px;
+}
+
+#temperaturacidade {
+    display: flex;
+    color: white;
+    gap: 5px;
+    flex-direction: column ;   
+    font-size: 24px;
+    font-weight: 250;
+    justify-content: space-around;
+}
+
+#locationIcon {
+    margin-left: 10px;
+    width: 20px;
+}
+
+.tempEClima{
+    /* background-color: #09141a; */
+    flex-direction: row;
+    max-height: 150px;
+    display: flex;
+}
+
+#chuva {
+    height: 30px;
+    max-width: 30px;
+}
+
+#celsius {
+    font-size: 32px;
+    margin-top: 35px;
+}
+
+#numeroTemp {
+    font-size: 100px;   
+    font-weight: 100;
+}
+
+h1 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+#iconClima{
+    width: 130px;
+}
+
+#divIconClima{
+    display: flex;
+    justify-content: end;
+    width: 100%;
+}
+
+.climaStatus {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 50px;
+}
+
+#statusIcons {
+    padding-right: 30px;
+}
+
+.diaSemana {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.info-maxmin{
+    display: flex;
+}
+
+.itemInfo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+}
+
+.itemInfo img{
+    width:55px;
+}
+
+.climaStatusItems {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #00000046;
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: white; 
+    margin-bottom: 10px; 
+}
+.climaStatus{
+    padding: 0;
+    max-width: 100vw;
+}
+
+.conteudo-e-carrossel {
+    display: flex;
+    align-items: end;
+    justify-content: space-between; 
+    height: 350px;
+    margin-top: 50px;
+}
+
+.carrossel{
+    overflow: hidden;
+    width: 80%;
+}
+
+.carrossel-todo {
+    flex: 0 0 75%; /* O carrossel ocupa 70% da largura do contêiner pai */
+    display: flex;
+    align-items: center;
+}
+
+.carrossel-itens {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 90%;
+    gap: 5%;
+}
+
+.item-clima {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    flex: 0 0 33.6%;
+    height: 290px;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: #00000057;
+    color: white;
+    border-radius: 8px;
+}
+
+.item-clima img {
+    width: 110px;
+    margin-bottom: 10px;
+}
+
+.conteudo-adicional {
+    flex: 0.85;
+    height: 100%;
+}
+
+.conteudo-adicional .item-clima {
+    height: 100%;
+    gap:10px;
+}
+
+.item-clima .arrow{
+    width: 20px;
+}
+    
+.porDoSol{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.prev, .next {
+    background-color: transparent;
+    color: white;
+    border: none;
+    cursor: pointer;
+    z-index: 10;
+    font-size: 50px;
+    font-weight: 700;
+    border-radius: 15px;
+}
+
+.prev {
+    margin-right: 20px;
+}
+
+.next{
+    margin-left: 10px;
+}
+
+.item-temperatura {
+    font-size: 28px;
+    color: white;
+}
+
+.item-sunset{
+    display: flex;
+    flex-direction: column;
+}
+.conteudo-adicional #sessao-por-do-sol .nascer{
+    width: 90px;
+}
+
+.celsiusSpace{
+    display: flex;
+    align-items: start;
+    gap: 25px;
+    max-height: 120px;
+}
+
+.loading {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    display: none;
+}
+
+.spinner {
+    border: 16px solid #f3f3f3;
+    border-top: 16px solid #3498db;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+
+@media (max-width:1096px) {
+    .containerBusca {
+        height: 34px;
+        padding: 5px;
+        width: 50%;
+        padding-left: 15px;
+        padding-right: 5px;
+    }
+    .containerBusca input {
+        width: 85%;
+        font-size: 13px;
+    }
+    .icon {
+        width: 55%;
+    }
+    .app{
+        padding: 15px;
+        width:100vw;
+    }
+    .celsiusSpace{
+        display: flex;
+        gap: 14px;
+    }
+    #celsius{
+        margin-top: 25px;
+    }
+    .informacoes {
+        text-align: end;
+        font-size: 26px;    
+
+    }
+    .header{
+        display:flex
+    }
+    .logo{
+        width: 70px;
+    }
+    .nomeCidade{
+        font-size: 26px;
+    }
+    #locationIcon {
+        margin-left: 10px;
+        width: 15px;
+    }
+    #numeroTemp {
+        font-size: 90px;   
+        font-weight: 100;
+    }
+    .climaDesc p{
+        font-size: 18px;
+    }
+    .containerInfo{
+        display: flex;
+        flex-direction: column;
+        gap:20px;
+        margin-top: 0px;
+    }
+    .conteudo-e-carrossel{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+    }
+    .minmax{
+        display: flex;
+        gap: 20px;
+    }
+    .minmax span{
+        font-size: 16px;
+    }
+    .carrossel{
+        width: 88%;
+    }
+    .carrossel-todo{
+        max-height: 160px;
+        width: 100%;
+        display: flex;
+    }
+    .carrossel-itens {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+        width: 80%;
+        gap: 10px;
+    }
+    .item-clima {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex: 0 0 38%;
+        height: 125px;
+        box-sizing: border-box;
+        text-align: center;
+        color: white;
+        border-radius: 8px;
+        padding: 10px;
+    }
+    .item-clima img{
+        width: 55px;
+        margin-bottom: 0px;
+    }
+    .itemInfo{
+        font-size: 15px;
+    }
+    .diaSemana {
+        font-size: 16px;
+        font-weight: 600; /* Semibold */
+    }
+
+    .conteudo-adicional{
+        width: 85%;
+    }
+    .climasDesc{
+        display: flex;
+    }
+    #iconClima{
+        width: 100px;
+    }
+    .temperaturaGrafico{
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction:column;
+    }
+    .containerInfo{
+        display: flex;
+        margin-top: 10px;
+    }
+    .climaStatus{
+        gap: 0;
+    }
+    .climaStatusItems {
+        padding: 6px 20px;
+        background-color: #00000057;
+        width: 95vw;
+    }
+    #statusIcons{
+        padding-right: 10px;
+        width: 40px;
+    }
+    .item-temperatura {
+        font-size: 20px;
+        color: white;
+    }
+    #divIconClima{
+        display: flex;
+    }
+    .conteudo-adicional #sessao-por-do-sol {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+    .conteudo-adicional #sessao-por-do-sol .nascer{
+        width: 70px;
+    }
+    .porDoSol{
+        width: 100%;
+    }
+    .arrow{
+        width: 20px;
+    }
+    .prev, .next {
+        background-color: transparent;
+        color: white;
+        border: none;
+        cursor: pointer;
+        z-index: 10;
+        font-size: 26px;
+        font-weight: 700; 
+        border-radius: 15px; 
+    }
+    
+    .prev {
+        margin-right: 15px;
+    }
+    
+    .next{
+        margin-left: 10px;
+    }
+}
